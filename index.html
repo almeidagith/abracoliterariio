@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abraço Literário</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="./1727301785398 (1).png" alt="Logo Projeto">
+    <nav>
+      <ul>
+        <li><a href="#resumo">Resumo</a></li>
+        <li><a href="#objetivos">Objetivos</a></li>
+        <li><a href="#atividades">Atividades</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Abraço Literário</h1>
+    <p>"Tudo o que você pensa e sofre, dentro de um abraço se dissolve."<br>– Martha Medeiros</p>
+  </section>
+
+  <section id="resumo">
+    <h2>Resumo do Projeto</h2>
+    <p>Esse projeto quer ajudar a construir uma cidadania ativa usando a leitura. Começamos em 2023 com os “abraços literários” – encontros como oficinas de leitura, saraus e poesia nos muros. Alunos do IFPB Campus Esperança e da EMEF José Souto, junto com seus professores, participam dessas atividades.</p>
+    <p>A ideia é aprender dentro e fora da sala de aula, dando vez e voz aos alunos. As leituras podem ser de obras conhecidas ou sugeridas pelos participantes. Tudo isso ajuda a unir pessoas e ideias de forma descontraída trazendo amizade, companheirismo e conhecimento após uma longa semana.</p>
+    <p>A base do projeto vem de estudos importantes. Queremos fortalecer a parceria entre as escolas, promovendo respeito, inclusão e a transformação de cada um e da sociedade!</p>
+  </section>
+
+  <section id="objetivos">
+    <h2>Objetivos</h2>
+    <p>Este projeto visa ampliar a contribuição com o processo de construção de uma cidadania ativa através de um trabalho consistente, sistemático e efetivo com leitura literária, iniciado em 2023. Ele é desenvolvido por meio de vivências literárias, denominadas “abraços literários”, experienciadas em relações dialógicas entre discentes e educadores do IFPB Campus Esperança e da EMEF José Souto.</p>
+  </section>
+
+  <section id="atividades">
+    <h2>Atividades</h2>
+    <ul id="listaAtividades"></ul>
+  </section>
+
+  <footer>
+    <p>Nos siga no Instagram para se manter informado!</p>
+    <div class="socials">
+      <a href="https://www.instagram.com/abracoliterariio?igsh=dHY2cXpoODUwbnEy" target="_blank">
+        <img src="./1746018575188.png" alt="Instagram">
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    function adicionarAtividade(nome, descricao) {
+      const listaAtividades = document.getElementById('listaAtividades');
+      const item = document.createElement('li');
+      item.innerHTML = `<strong>${nome}</strong><br>${descricao}`;
+      listaAtividades.appendChild(item);
+    }
+
+    adicionarAtividade('Oficinas de leitura', 'Discussão de livros, textos, músicas, vídeos e filmes literários.');
+    adicionarAtividade('Sarau literário', 'Declamações, música, teatro e leitura de textos em eventos abertos e participativos.');
+    adicionarAtividade('Poesia de muro', 'Criação e exposição de poemas e textos nos murais da escola.');
+  </script>
+
+</body>
+</html>

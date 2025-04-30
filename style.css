@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fdfaf6;
+  color: #5b3c2d;
+  line-height: 1.6;
+}
+
+header, section, footer {
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(91, 60, 45, 0.08);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff7f3;
+  border-bottom: 4px solid #f3d3cb;
+}
+
+header img {
+  width: 80px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #5b3c2d;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e05757;
+}
+
+.hero {
+  background-image: url('./abracoliterariio.png');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 120px 20px;
+  border-radius: 12px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(91, 60, 45, 0.4);
+  z-index: 1;
+}
+
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  color: #f8e9e4;
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+section h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  color: #7b4e3c;
+}
+
+section p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+#atividades ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+#atividades ul li {
+  background-color: #fffaf5;
+  border-left: 6px solid #d9a37c;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+#atividades ul li:hover {
+  transform: scale(1.02);
+}
+
+footer {
+  background-color: #5b3c2d;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 12px;
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+.socials a img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+.socials a img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+}
